@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NbaStatsClient\NbaStatsClient.csproj">
+      <Project>{e89c3338-3d72-4a90-91db-33c2a2a97bd8}</Project>
+      <Name>NbaStatsClient</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,5 +24,10 @@ namespace NbaWpfApp
         {
             InitializeComponent();
         }
+
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
