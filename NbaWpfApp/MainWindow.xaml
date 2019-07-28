@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NbaWpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Click="SubmitButton_Click" Margin="637,103,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="158,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        Title="MainWindow" Height="467.775" Width="616.632">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="283*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="submitButton" Content="Submit" Click="SubmitButton_ClickAsync" Margin="45,65,33,317" Width="509" Height="22"/>
+        <TextBox x:Name="urlTextBox" Height="22" Margin="45,30,33,352" TextWrapping="Wrap" Text="" Width="509" RenderTransformOrigin="0.5,0.5"/>
+        <RichTextBox x:Name="outputBox" Height="262" Margin="34,88,22.751,27" Width="509">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </Grid>
 </Window>
