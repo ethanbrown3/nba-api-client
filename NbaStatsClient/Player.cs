@@ -10,6 +10,9 @@ namespace NbaStatsClient
         public string First_Name { get; set; }
         public string Last_Name { get; set; }
         public string Primary_Position { get; set; }
+        public string Height { get; set; }
+        public string Weight { get; set; }
+        public string Jersey_Number { get; set; }
 
         public override string ToString()
         {
